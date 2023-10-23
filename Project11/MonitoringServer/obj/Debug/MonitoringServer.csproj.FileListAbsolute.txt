@@ -1,0 +1,11 @@
+C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\MonitoringServer\bin\Debug\MonitoringServer.exe.config
+C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\MonitoringServer\bin\Debug\MonitoringServer.exe
+C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\MonitoringServer\bin\Debug\MonitoringServer.pdb
+C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\MonitoringServer\bin\Debug\Common.exe
+C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\MonitoringServer\bin\Debug\Common.pdb
+C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\MonitoringServer\bin\Debug\Common.exe.config
+C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\MonitoringServer\obj\Debug\MonitoringServer.csproj.CoreCompileInputs.cache
+C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\MonitoringServer\obj\Debug\MonitoringServer.csproj.CopyComplete
+C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\MonitoringServer\obj\Debug\MonitoringServer.exe
+C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\MonitoringServer\obj\Debug\MonitoringServer.pdb
+C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\MonitoringServer\obj\Debug\MonitoringServer.csproj.AssemblyReference.cache
