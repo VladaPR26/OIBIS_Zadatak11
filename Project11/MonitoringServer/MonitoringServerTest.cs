@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MonitoringServer
 {
-    public class MonitoringServerTest : IMonitoringServerTest
+    class MonitoringServerTest : IMonitoringServerTest
     {
         public void TestMonitoringServer(string message)
         {

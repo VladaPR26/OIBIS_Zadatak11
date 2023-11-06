@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
@@ -11,11 +12,25 @@ namespace MonitoringServer
     {
         static void Main(string[] args)
         {
-            using (ServiceHost host = new ServiceHost(typeof(MonitoringServerTest)))
+            NetTcpBinding binding = new NetTcpBinding();
+            string address = "net.tcp://localhost:4000";
+            ServiceHost host = new ServiceHost(typeof(MonitoringServerTest));
+
+            host.AddServiceEndpoint(typeof(IMonitoringServerTest), binding, address);
+            
+            try
             {
                 host.Open();
                 Console.WriteLine("Monitoring server started successfully");
                 Console.ReadKey();
+            }catch(Exception e)
+            {
+                Console.WriteLine("[ERROR] {0}", e.Message);
+                Console.WriteLine("[StackTrace] {0}", e.StackTrace);
+            }
+            finally
+            {
+                host.Close();
             }
         }
     }
