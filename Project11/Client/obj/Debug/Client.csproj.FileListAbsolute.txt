@@ -8,3 +8,14 @@ C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\Client\obj\Debug\Client.csproj.CopyCo
 C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\Client\obj\Debug\Client.exe
 C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\Client\obj\Debug\Client.pdb
 C:\Users\Vlada\Desktop\FTN\OIBIS\Project11\Client\bin\Debug\Common.dll
+C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\bin\Debug\Client.exe.config
+C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\bin\Debug\Client.exe
+C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\bin\Debug\Client.pdb
+C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\bin\Debug\Common.dll
+C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\bin\Debug\Common.pdb
+C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\bin\Debug\Common.exe.config
+C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.exe
+C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.pdb

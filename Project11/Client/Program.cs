@@ -31,6 +31,16 @@ namespace Client
             clientServerBinding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
             clientServerBinding.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign;
             Console.WriteLine("User's identity name and its AuthenticationType:" + WindowsIdentity.GetCurrent().Name + " " + WindowsIdentity.GetCurrent().AuthenticationType);
+            NetTcpBinding monitoringServerBinding = new NetTcpBinding();
+            EndpointAddress monitoringServerAddress = new EndpointAddress(new Uri("net.tcp://localhost:4000"));
+
+
+            ChannelFactory<IMonitoringServerTest> channelMontoring =
+              new ChannelFactory<IMonitoringServerTest>(monitoringServerBinding, monitoringServerAddress);
+            IMonitoringServerTest proxyMonitoring = channelMontoring.CreateChannel();
+         
+
+
 
             host.AddServiceEndpoint(typeof(IWCFContract), clientBinding, clientAddress);
             try
@@ -49,6 +59,7 @@ namespace Client
                             Console.WriteLine("Upisi poruku");
                             string message = Console.ReadLine();
                             proxy.factory.TestComunication(message);
+                            proxyMonitoring.TestMonitoringServer(message);
                             Console.ReadLine();
                             if (message.Equals("x"))
                             {
@@ -70,21 +81,12 @@ namespace Client
 
 
             NetTcpBinding serverBinding = new NetTcpBinding();
-            NetTcpBinding monitoringServerBinding = new NetTcpBinding();
             
             serverBinding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
-            EndpointAddress monitoringServerAddress = new EndpointAddress(new Uri("net.tcp://localhost:4000"));
             EndpointAddress serverAddress = new EndpointAddress(new Uri("net.tcp://localhost:4001"), new X509CertificateEndpointIdentity(srvCert));
            
 
-            ChannelFactory<IMonitoringServerTest> channelMontoring =
-               new ChannelFactory<IMonitoringServerTest>(monitoringServerBinding, monitoringServerAddress);
-            IMonitoringServerTest proxyMonitoring = channelMontoring.CreateChannel();
-            string testMonitoringServer;
-            Console.WriteLine("To monitoring server: ");
-            testMonitoringServer = Console.ReadLine();
-            proxyMonitoring.TestMonitoringServer(testMonitoringServer);
-
+           
 
 
 
