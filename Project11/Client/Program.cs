@@ -1,5 +1,7 @@
 ﻿
 using Common;
+using Manager;
+using SymmetricAlgorithms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +18,9 @@ namespace Client
     {
         static void Main(string[] args)
         {
+            string keyFile = "SecretKey";
+            string folderNameDES = "../../../Server/bin/Debug/";
+            
 
             NetTcpBinding clientBinding = new NetTcpBinding();
             Console.WriteLine("Unesite port: ");
@@ -59,6 +64,7 @@ namespace Client
                             Console.WriteLine("Upisi poruku");
                             string message = Console.ReadLine();
                             proxy.factory.TestComunication(message);
+                            message=TripleDES_Symm_Algorithm.EncryptMessage(message, SecretKey.LoadKey(folderNameDES+keyFile));
                             proxyMonitoring.TestMonitoringServer(message);
                             Console.ReadLine();
                             if (message.Equals("x"))

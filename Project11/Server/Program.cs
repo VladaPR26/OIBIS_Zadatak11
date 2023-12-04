@@ -1,4 +1,5 @@
 ﻿using Common;
+using Manager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,11 @@ namespace Server
 
         static void Main(string[] args)
         {
+            string keyFile = "SecretKey";    
+            //string folderNameDES = "DES/";
+            byte[] eSecretKeyDes = SecretKey.GenerateKey(AlgorithmType.DES);
+            SecretKey.StoreKey(eSecretKeyDes,keyFile);
+
             NetTcpBinding binding = new NetTcpBinding();
 
             string address = "net.tcp://localhost:4001";

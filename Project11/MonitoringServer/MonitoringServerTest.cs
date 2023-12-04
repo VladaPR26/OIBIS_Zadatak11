@@ -1,4 +1,6 @@
 ﻿using Common;
+using Manager;
+using SymmetricAlgorithms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +13,10 @@ namespace MonitoringServer
     {
         public void TestMonitoringServer(string message)
         {
-            Console.WriteLine(message);
+            string keyFile = "SecretKey";
+            string folderNameDES = "../../../Server/bin/Debug/";
+            string eMessage = TripleDES_Symm_Algorithm.DecryptMessage(message, SecretKey.LoadKey(folderNameDES + keyFile));
+            Console.WriteLine(eMessage);
         }
     }
 }
