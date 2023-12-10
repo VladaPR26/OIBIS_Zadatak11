@@ -19,3 +19,15 @@ C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Server\obj\Debug\Serve
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Server\obj\Debug\Server.csproj.CopyComplete
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Server\obj\Debug\Server.exe
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Server\obj\Debug\Server.pdb
+D:\oibis\OIBIS_Zadatak11\Project11\Server\bin\Debug\Server.exe.config
+D:\oibis\OIBIS_Zadatak11\Project11\Server\bin\Debug\Server.exe
+D:\oibis\OIBIS_Zadatak11\Project11\Server\bin\Debug\Server.pdb
+D:\oibis\OIBIS_Zadatak11\Project11\Server\bin\Debug\Common.dll
+D:\oibis\OIBIS_Zadatak11\Project11\Server\bin\Debug\Common.pdb
+D:\oibis\OIBIS_Zadatak11\Project11\Server\bin\Debug\Common.exe.config
+D:\oibis\OIBIS_Zadatak11\Project11\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+D:\oibis\OIBIS_Zadatak11\Project11\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+D:\oibis\OIBIS_Zadatak11\Project11\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\oibis\OIBIS_Zadatak11\Project11\Server\obj\Debug\Server.csproj.CopyComplete
+D:\oibis\OIBIS_Zadatak11\Project11\Server\obj\Debug\Server.exe
+D:\oibis\OIBIS_Zadatak11\Project11\Server\obj\Debug\Server.pdb

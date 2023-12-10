@@ -9,6 +9,7 @@ using System.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 using System.ServiceModel;
+using System.ServiceModel.Description;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -43,8 +44,15 @@ namespace Client
             ChannelFactory<IMonitoringServerTest> channelMontoring =
               new ChannelFactory<IMonitoringServerTest>(monitoringServerBinding, monitoringServerAddress);
             IMonitoringServerTest proxyMonitoring = channelMontoring.CreateChannel();
-         
 
+
+            // Audit
+            ServiceSecurityAuditBehavior newAudit = new ServiceSecurityAuditBehavior();
+            newAudit.AuditLogLocation = AuditLogLocation.Application;
+            newAudit.ServiceAuthorizationAuditLevel = AuditLevel.SuccessOrFailure;
+
+            host.Description.Behaviors.Remove<ServiceSecurityAuditBehavior>();
+            host.Description.Behaviors.Add(newAudit);
 
 
             host.AddServiceEndpoint(typeof(IWCFContract), clientBinding, clientAddress);
@@ -56,21 +64,20 @@ namespace Client
                     Console.WriteLine("Unesite port na koji zelite da se konektujete: ");
                     string portConnect = Console.ReadLine();
                     EndpointAddress clientServerAddres = new EndpointAddress(new Uri("net.tcp://localhost:" + portConnect));
-
+                    string message = "";
                     using (WCFClient proxy = new WCFClient(clientServerBinding, clientServerAddres))
                     {
-                        while (true)
+                    Audit.ConnectionSuccess();
+                    
+                        while (!message.Equals(TripleDES_Symm_Algorithm.EncryptMessage("x", SecretKey.LoadKey(folderNameDES + keyFile))))
                         {
                             Console.WriteLine("Upisi poruku");
-                            string message = Console.ReadLine();
+                            message = Console.ReadLine();
                             proxy.factory.TestComunication(message);
                             message=TripleDES_Symm_Algorithm.EncryptMessage(message, SecretKey.LoadKey(folderNameDES+keyFile));
                             proxyMonitoring.TestMonitoringServer(message);
                             Console.ReadLine();
-                            if (message.Equals("x"))
-                            {
-                                break;
-                            }
+                            
                         }
                     }
                 
@@ -82,25 +89,16 @@ namespace Client
             }
             finally
             {
+                Audit.DisconnectSuccess();
                 host.Close();
             }
-
 
             NetTcpBinding serverBinding = new NetTcpBinding();
             
             serverBinding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
             EndpointAddress serverAddress = new EndpointAddress(new Uri("net.tcp://localhost:4001"), new X509CertificateEndpointIdentity(srvCert));
-           
-
-           
-
-
 
             string cltCertCN = Common.Formatter.ParseName(WindowsIdentity.GetCurrent().Name);
-
-
-
-
 
             ChannelFactory<IServerTest> channelServer =
                new ChannelFactory<IServerTest>(serverBinding,serverAddress);
@@ -110,11 +108,11 @@ namespace Client
 
             channelServer.Credentials.ClientCertificate.Certificate = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, cltCertCN);
 
-            IServerTest proxyServer = channelServer.CreateChannel();
-            string testServer;
-            Console.WriteLine("To server: ");
-            testServer = Console.ReadLine();
-            proxyServer.TestServer(testServer);
+            //IServerTest proxyServer = channelServer.CreateChannel();
+            //string testServer;
+            //Console.WriteLine("To server: ");
+            //testServer = Console.ReadLine();
+            //proxyServer.TestServer(testServer);
 
             Console.ReadKey();
         }

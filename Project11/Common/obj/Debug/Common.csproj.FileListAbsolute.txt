@@ -9,3 +9,11 @@ C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Common\bin\Debug\Commo
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.dll
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.pdb
+D:\oibis\OIBIS_Zadatak11\Project11\Common\bin\Debug\Common.dll
+D:\oibis\OIBIS_Zadatak11\Project11\Common\bin\Debug\Common.pdb
+D:\oibis\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+D:\oibis\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.AuditEventFile.resources
+D:\oibis\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.csproj.GenerateResource.cache
+D:\oibis\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\oibis\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.dll
+D:\oibis\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.pdb

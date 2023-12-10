@@ -19,3 +19,15 @@ C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\obj\Debug\Clien
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.csproj.CopyComplete
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.exe
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.pdb
+D:\oibis\OIBIS_Zadatak11\Project11\Client\bin\Debug\Client.exe.config
+D:\oibis\OIBIS_Zadatak11\Project11\Client\bin\Debug\Client.exe
+D:\oibis\OIBIS_Zadatak11\Project11\Client\bin\Debug\Client.pdb
+D:\oibis\OIBIS_Zadatak11\Project11\Client\bin\Debug\Common.dll
+D:\oibis\OIBIS_Zadatak11\Project11\Client\bin\Debug\Common.pdb
+D:\oibis\OIBIS_Zadatak11\Project11\Client\bin\Debug\Common.exe.config
+D:\oibis\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\oibis\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+D:\oibis\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\oibis\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.csproj.CopyComplete
+D:\oibis\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.exe
+D:\oibis\OIBIS_Zadatak11\Project11\Client\obj\Debug\Client.pdb

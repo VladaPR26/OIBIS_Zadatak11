@@ -19,3 +19,15 @@ C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\MonitoringServer\obj\D
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\MonitoringServer\obj\Debug\MonitoringServer.csproj.CopyComplete
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\MonitoringServer\obj\Debug\MonitoringServer.exe
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\MonitoringServer\obj\Debug\MonitoringServer.pdb
+D:\oibis\OIBIS_Zadatak11\Project11\MonitoringServer\bin\Debug\MonitoringServer.exe.config
+D:\oibis\OIBIS_Zadatak11\Project11\MonitoringServer\bin\Debug\MonitoringServer.exe
+D:\oibis\OIBIS_Zadatak11\Project11\MonitoringServer\bin\Debug\MonitoringServer.pdb
+D:\oibis\OIBIS_Zadatak11\Project11\MonitoringServer\bin\Debug\Common.dll
+D:\oibis\OIBIS_Zadatak11\Project11\MonitoringServer\bin\Debug\Common.pdb
+D:\oibis\OIBIS_Zadatak11\Project11\MonitoringServer\bin\Debug\Common.exe.config
+D:\oibis\OIBIS_Zadatak11\Project11\MonitoringServer\obj\Debug\MonitoringServer.csproj.AssemblyReference.cache
+D:\oibis\OIBIS_Zadatak11\Project11\MonitoringServer\obj\Debug\MonitoringServer.csproj.SuggestedBindingRedirects.cache
+D:\oibis\OIBIS_Zadatak11\Project11\MonitoringServer\obj\Debug\MonitoringServer.csproj.CoreCompileInputs.cache
+D:\oibis\OIBIS_Zadatak11\Project11\MonitoringServer\obj\Debug\MonitoringServer.csproj.CopyComplete
+D:\oibis\OIBIS_Zadatak11\Project11\MonitoringServer\obj\Debug\MonitoringServer.exe
+D:\oibis\OIBIS_Zadatak11\Project11\MonitoringServer\obj\Debug\MonitoringServer.pdb
