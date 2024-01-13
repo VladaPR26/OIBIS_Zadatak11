@@ -12,5 +12,7 @@ namespace Common
     {
         [OperationContract]
         void TestComunication(string message);
+        [OperationContract]
+        void Com(string message);
     }
 }

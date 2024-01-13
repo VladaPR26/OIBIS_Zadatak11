@@ -15,35 +15,39 @@ namespace Server
 {
     class Program
     {
-
         static void Main(string[] args)
         {
+
+            // Generisanje tajnog kljuca za kriptovanje poruka ka monitoring serveru
             string keyFile = "SecretKey";    
             //string folderNameDES = "DES/";
             byte[] eSecretKeyDes = SecretKey.GenerateKey(AlgorithmType.DES);
             SecretKey.StoreKey(eSecretKeyDes,keyFile);
 
-            NetTcpBinding binding = new NetTcpBinding();
+            try
+            {
+                ServerTest.GenerateServerCertificate("TestCA", "wcfservice", "1234");
+                ServerTest.GenerateServerCertificate("TestCA", "wcfclient", "1234");
+                Console.WriteLine("Uspesno generisanje potrebnih sertifikata");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("neuspesno generisanje potrebnih sertifikata: " + e);
+            }
 
+            // Kreiranje konekcije izmedju klijenta i servera
+            NetTcpBinding binding = new NetTcpBinding();
             string address = "net.tcp://localhost:4001";
             ServiceHost host = new ServiceHost(typeof(ServerTest));
 
+            // Windows autentifikacija servera i klijenta
             binding.Security.Mode = SecurityMode.Transport;
             binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
             binding.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign;
 
-            string srvCertCN = Formatter.ParseName(WindowsIdentity.GetCurrent().Name);
-            binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;
-
-            host.Credentials.ClientCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.ChainTrust;
-
-            host.Credentials.ClientCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;
-
-            host.Credentials.ServiceCertificate.Certificate = CertManager.GetCertificateFromStorage(StoreName.My, StoreLocation.LocalMachine, srvCertCN);
-
+            // Otvaranje server hosta
             host.AddServiceEndpoint(typeof(IServerTest), binding, address);
-
-
+         
             try
             {
                 host.Open();
