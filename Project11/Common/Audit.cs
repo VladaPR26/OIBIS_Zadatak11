@@ -63,6 +63,37 @@ namespace Common
                     (int)AuditEventsTypes.Disconnected));
             }
         }
+        public static void NewCert()
+        {
+            if (customLog != null)
+            {
+
+                string NewCert =
+                    AuditEvents.NewCert;
+                string message = String.Format(NewCert);
+                customLog.WriteEntry(message);
+            }
+            else
+            {
+                throw new ArgumentException(string.Format("Error while trying to write event (eventId = {0}) to event log.", (int)AuditEventsTypes.NewCert));
+            }
+        }
+
+        public static void CertCompromited()
+        {
+            if (customLog != null)
+            {
+
+                string CertCompromited =
+                    AuditEvents.CertCompromited;
+                string message = String.Format(CertCompromited);
+                customLog.WriteEntry(message);
+            }
+            else
+            {
+                throw new ArgumentException(string.Format("Error while trying to write event (eventId = {0}) to event log.", (int)AuditEventsTypes.CertCompromited));
+            }
+        }
 
         /// <summary>
 		/// 

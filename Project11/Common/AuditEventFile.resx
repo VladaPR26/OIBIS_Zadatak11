@@ -117,10 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CertCompromited" xml:space="preserve">
+    <value>Certificate compromited!</value>
+  </data>
   <data name="Connected" xml:space="preserve">
     <value>Successfully connected!</value>
   </data>
   <data name="Disconnected" xml:space="preserve">
     <value>Successfully disconnected!</value>
+  </data>
+  <data name="NewCert" xml:space="preserve">
+    <value>New certificate created!</value>
   </data>
 </root>

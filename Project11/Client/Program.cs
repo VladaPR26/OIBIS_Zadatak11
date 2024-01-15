@@ -117,7 +117,9 @@ namespace Client
                                 try
                                 {
                                     proxyServer.CompromitedCert(clnCert1);
+                                    Audit.CertCompromited();
                                     clnCert1 = proxyServer.CertificateRequest();
+                                    Audit.NewCert();
                                     Console.WriteLine("Kompromitovani sertifikat je povucen i dobili ste novi, mozete nastaviti sa komuniakcijom");
                                 }
                                 catch(Exception) 

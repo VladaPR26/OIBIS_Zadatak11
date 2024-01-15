@@ -19,7 +19,7 @@ namespace Common {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class AuditEventFile {
@@ -61,6 +61,15 @@ namespace Common {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Certificate compromited!.
+        /// </summary>
+        internal static string CertCompromited {
+            get {
+                return ResourceManager.GetString("CertCompromited", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Successfully connected!.
         /// </summary>
         internal static string Connected {
@@ -75,6 +84,15 @@ namespace Common {
         internal static string Disconnected {
             get {
                 return ResourceManager.GetString("Disconnected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New certificate created!.
+        /// </summary>
+        internal static string NewCert {
+            get {
+                return ResourceManager.GetString("NewCert", resourceCulture);
             }
         }
     }

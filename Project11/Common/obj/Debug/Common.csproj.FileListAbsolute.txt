@@ -19,3 +19,4 @@ D:\oibis\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.dll
 D:\oibis\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.pdb
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.AuditEventFile.resources
 C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.csproj.GenerateResource.cache
+C:\Users\Vlada\Desktop\projekat\OIBIS_Zadatak11\Project11\Common\obj\Debug\Common.csproj.AssemblyReference.cache

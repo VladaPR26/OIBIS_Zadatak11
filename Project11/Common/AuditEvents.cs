@@ -11,7 +11,9 @@ namespace Common
     public enum AuditEventsTypes
     {
         Connected = 0,
-        Disconnected = 1
+        Disconnected = 1,
+        NewCert=2,
+        CertCompromited=3
     }
 
     public class AuditEvents
@@ -47,6 +49,22 @@ namespace Common
             get
             {
                 return ResourceMgr.GetString(AuditEventsTypes.Disconnected.ToString());
+            }
+        }
+
+        public static string NewCert
+        {
+            get
+            {
+                return ResourceMgr.GetString(AuditEventsTypes.NewCert.ToString());
+            }
+        }
+
+        public static string CertCompromited
+        {
+            get
+            {
+                return ResourceMgr.GetString(AuditEventsTypes.CertCompromited.ToString());
             }
         }
     }
