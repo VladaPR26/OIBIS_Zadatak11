@@ -20,8 +20,8 @@ namespace Server
 
             // Generisanje tajnog kljuca za kriptovanje poruka ka monitoring serveru
             string keyFile = "SecretKey";    
-            //string folderNameDES = "DES/";
-            byte[] eSecretKeyDes = SecretKey.GenerateKey(AlgorithmType.DES);
+            //string folderNameDES = "AES/";
+            byte[] eSecretKeyDes = SecretKey.GenerateKey(AlgorithmType.AES);
             SecretKey.StoreKey(eSecretKeyDes,keyFile);
 
             try

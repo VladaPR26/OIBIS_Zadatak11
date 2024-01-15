@@ -109,7 +109,7 @@ namespace Server
             writer.Write((byte)((value >> 24) & 0xff));
         }
 
-        //GenerateServerCertificate("TestCA", "wcfservice", "1234");
+     
         
         public void AddPortToServerList(string port)
         {

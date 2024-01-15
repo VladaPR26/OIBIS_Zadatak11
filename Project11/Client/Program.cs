@@ -129,7 +129,7 @@ namespace Client
                             proxy.Com(message);
                             // Poruka za monitoring server sa imenom korisnika koji salje, portom i vremenom slanje
                             monitoringMessage = windowsName +" sa porta:"+ port +": "+message + " \nPoslata:" +DateTime.Now.ToString();
-                            monitoringMessage = TripleDES_Symm_Algorithm.EncryptMessage(monitoringMessage, SecretKey.LoadKey(folderNameDES + keyFile));
+                            monitoringMessage = AES_Symm_Algorithm.EncryptMessage(monitoringMessage, SecretKey.LoadKey(folderNameDES + keyFile));
                             proxyMonitoring.TestMonitoringServer(monitoringMessage);
                             Console.ReadLine();
                         }

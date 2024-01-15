@@ -25,13 +25,11 @@ namespace Manager
 		/// <returns> string value representing a symmetric key </returns>
 		public static byte[] GenerateKey(AlgorithmType algorithmType)
 		{
-		
-			using (DESCryptoServiceProvider des = new DESCryptoServiceProvider())
+			using (AesCryptoServiceProvider aes = new AesCryptoServiceProvider())
 			{
-				des.GenerateKey();
-				return des.Key;
+				aes.GenerateKey();
+				return aes.Key;
 			}
-
 
 		}
 

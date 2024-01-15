@@ -17,7 +17,6 @@ namespace Client
             {
                 //cltCertCN.SubjectName should be set to the client's username. .NET WindowsIdentity class provides information about Windows user running the given process
                 string cltCertCN = Formatter.ParseName(WindowsIdentity.GetCurrent().Name);
-                //string cltCertCN = Formatter.ParseName("wcfclient");
 
                 this.Credentials.ServiceCertificate.Authentication.CertificateValidationMode = System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust;
                 this.Credentials.ServiceCertificate.Authentication.RevocationMode = X509RevocationMode.NoCheck;

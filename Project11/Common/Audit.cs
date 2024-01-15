@@ -49,7 +49,7 @@ namespace Common
 
         public static void DisconnectSuccess()
         {
-            //TO DO
+            
             if (customLog != null)
             {
                 string DisconnectSuccess =

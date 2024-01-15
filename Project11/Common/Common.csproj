@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="3DES_Symm_Algorithm.cs" />
+    <Compile Include="AES_Symm_Algorithm.cs" />
     <Compile Include="Audit.cs" />
     <Compile Include="AuditEventFile.Designer.cs">
       <AutoGen>True</AutoGen>
